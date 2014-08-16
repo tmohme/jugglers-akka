@@ -41,6 +41,7 @@ class Juggler extends Actor with ActorLogging {
 }
 
 
+
 object Jugglers extends App {
   
   def injectBalls(jugglers: Seq[ActorRef], number: Int):Unit = {
@@ -74,7 +75,7 @@ object Jugglers extends App {
   val processors = Runtime.getRuntime().availableProcessors()
   
   // Create the 'Juggler' actors
-  val jugglers = for (i <- 1 to processors) yield system.actorOf(Props[Juggler], s"juggler-$i") 
+  val jugglers = for (i <- 1 to processors*2) yield system.actorOf(Props[Juggler], s"juggler-$i") 
   
   // Create an "actor-in-a-box"
   val inbox = Inbox.create(system)
@@ -82,14 +83,18 @@ object Jugglers extends App {
   // Tell the jugglers who their partners are
   jugglers foreach {juggler => juggler ! Partners(jugglers)}
 
+  val iterations = 20
+  val ballCount = jugglers.size
+  println(s"Running with ${jugglers.size} jugglers thru ${iterations} iterations, injecting ${ballCount} balls each round.")
+  
   // start the juggling
-  injectBalls(jugglers, jugglers.size)
+  injectBalls(jugglers, ballCount)
  
   // let hotspot do its work
-  for (i <- 1 to 20) {
+  for (i <- 1 to iterations) {
     Thread.sleep(1000)
     reportCounts(jugglers)
-    injectBalls(jugglers, jugglers.size)
+    injectBalls(jugglers, ballCount)
   }
   
   jugglers foreach {juggler => juggler ! PoisonPill}
