@@ -16,18 +16,26 @@
 	"buffers":
 	[
 		{
-			"file": ".classpath",
+			"file": "src/main/scala/jugglers.scala",
 			"settings":
 			{
-				"buffer_size": 827,
+				"buffer_size": 2425,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": ".project",
+			"file": "build.sbt",
 			"settings":
 			{
-				"buffer_size": 362,
+				"buffer_size": 219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.gradle",
+			"settings":
+			{
+				"buffer_size": 451,
 				"line_ending": "Unix"
 			}
 		}
@@ -38,6 +46,22 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"ssg",
+				"Set Syntax: Groovy"
+			],
+			[
+				"f",
+				"File: Revert"
+			],
+			[
+				"ssp",
+				"Set Syntax: Java Properties"
+			],
+			[
+				"ssx ",
+				"Set Syntax: XML"
+			],
 			[
 				"ssx",
 				"Set Syntax: XML"
@@ -63,7 +87,13 @@
 	},
 	"file_history":
 	[
+		"/Users/thomas/Applications/sbt-0.13.5/bin/sbt",
+		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/.classpath",
 		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/src/main/scala/hw.scala",
+		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/.gitignore",
+		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/.project",
+		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/.settings/org.eclipse.jdt.core.prefs",
+		"/Users/thomas/Documents/SWDevelopment/Coursera/reactive/workspace/5-actorbintree/src/main/scala/actorbintree/BinaryTreeSet.scala",
 		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/build.sbt",
 		"/Users/thomas/Documents/SWDevelopment/Akka/jugglers/src/hw.scala",
 		"/Users/thomas/Desktop/gradle/gradle-demo/build.gradle",
@@ -128,16 +158,46 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": ".classpath",
+					"file": "src/main/scala/jugglers.scala",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 827,
+						"buffer_size": 2425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1143,
+								1143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Scala/Scala.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 425.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "build.sbt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
 						"regions":
 						{
 						},
@@ -150,7 +210,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage"
+							"syntax": "Packages/Scala/Scala.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -160,27 +220,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": ".project",
+					"buffer": 2,
+					"file": "build.gradle",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 362,
+						"buffer_size": 451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								121,
+								121
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/XML/XML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Groovy/Groovy.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -267,8 +325,8 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 150.0,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
